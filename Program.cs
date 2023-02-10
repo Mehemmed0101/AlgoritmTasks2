@@ -19,16 +19,16 @@
             //}
             #endregion
             #region Sifirlarin sayi
-            //int n =int.Parse(Console.ReadLine());
-            //int zeroCount = 0;
-            //int tmp = 0;
+            int n = int.Parse(Console.ReadLine());
+            int zeroCount = 0;
+            int tmp = n;
 
-            //while (n != 0) 
-            //{
-            //    if (n == 0) zeroCount++;
-            //    tmp /= 10;
-            //}
-            //Console.WriteLine($"{n}-deki sifirlarin sayi={zeroCount}");
+            while (tmp != 0)
+            {
+                if (tmp%10== 0) zeroCount++;
+                tmp/= 10;
+            }
+            Console.WriteLine($"{n}-deki sifirlarin sayi={zeroCount}");
             #endregion
             #region Yerdeyisme
             //decimal n = decimal.Parse(Console.ReadLine());
@@ -36,7 +36,7 @@
             //decimal kesr = n - real;
             //decimal x = (real / 1000M);
             //decimal reverse = x + kesr * 1000;
-          
+
             //Console.WriteLine($"{reverse}");
             #endregion
         }
